@@ -2,7 +2,14 @@ from time import sleep
 
 import pytest
 
-from pomodoro.timer import TimerEngine, TimerState
+from pomodoro.timer import TimerEngine, TimerState, format_hms
+
+
+def test_format_hms_formats_minutes_and_hours() -> None:
+    assert format_hms(59) == "00:59"
+    assert format_hms(61) == "01:01"
+    assert format_hms(3600) == "01:00:00"
+    assert format_hms(0.2) == "00:01"
 
 
 def test_start_rejects_zero_duration() -> None:

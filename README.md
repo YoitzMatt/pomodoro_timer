@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-Desktop countdown timer built with Python and Tkinter. Save named presets, run one timer at a time, and optionally cycle through classic pomodoro work/break phases. When a timer ends, an always-on-top popup appears.
+Not a fan of the clock app on Mac so I buit something else.
 
 ## Run
 
